@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products - Koshmochon</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <h1>Koshmochon 🛍</h1>
+                <p>Premium Men's Fashion</p>
+            </div>
+            <div class="user-actions">
+                <a href="#" id="cart-icon"><i class="fas fa-shopping-cart"></i> <span id="cart-count">0</span></a>
+                <a href="#" id="user-icon"><i class="fas fa-user"></i></a>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li class="dropdown">
+                    <a href="products.html">Products <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="#shirts">Shirts</a>
+                        <a href="#pants">Pants</a>
+                        <a href="#shorts">Shorts</a>
+                        <a href="#shoes">Shoes</a>
+                        <a href="#inners">Inners</a>
+                    </div>
+                </li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="products-section">
+        <h2>Our Products</h2>
+        <div class="category-filter">
+            <button class="filter-btn active" data-category="all">All</button>
+            <button class="filter-btn" data-category="shirts">Shirts</button>
+            <button class="filter-btn" data-category="pants">Pants</button>
+            <button class="filter-btn" data-category="shorts">Shorts</button>
+            <button class="filter-btn" data-category="shoes">Shoes</button>
+            <button class="filter-btn" data-category="inners">Inners</button>
+        </div>
+
+        <div class="product-category" id="shirts">
+            <h3>Shirts</h3>
+            <div class="product-container">
+                <div class="product" data-category="shirts">
+                    <img src="white.jpg" alt="Formal White Shirt">
+                    <h3>Formal White Shirt</h3>
+                    <p>Classic fit, premium cotton</p>
+                    <p class="price">₹1299</p>
+                    <button class="add-to-cart" data-id="4">Add to Cart</button>
+                </div>
+                <div class="product" data-category="shirts">
+                    <img src="casual.jpeg" alt="Casual Check Shirt">
+                    <h3>Casual Check Shirt</h3>
+                    <p>Comfortable for everyday wear</p>
+                    <p class="price">₹1099</p>
+                    <button class="add-to-cart" data-id="5">Add to Cart</button>
+                </div>
+                <div class="product" data-category="=shirts">
+                    <img src="party.webp" alt="party shirts">
+                    <h3>Party Wear</h3>
+                    <p>All party wear,comfartable</p>
+                    <p class="price">₹999</p>
+                    <button class="add-to-cart" data-id="6">Add to Cart</button>
+
+                </div>
+                <!-- Add more shirts -->
+            </div>
+        </div>
+
+        <div class="product-category" id="pants">
+            <h3>Pants</h3>
+            <div class="product-container">
+                <div class="product" data-category="pants">
+                    <img src="slim.jpeg" alt="Slim Fit Chinos">
+                    <h3>Slim Fit Chinos</h3>
+                    <p>Versatile for all occasions</p>
+                    <p class="price">₹1599</p>
+                    <button class="add-to-cart" data-id="6">Add to Cart</button>
+                </div>
+                <div class="product" data-category="pants">
+                    <img src="formal.jpeg" alt="Formal Trousers">
+                    <h3>Formal Trousers</h3>
+                    <p>Perfect for office wear</p>
+                    <p class="price">₹1299</p>
+                    <button class="add-to-cart" data-id="7">Add to Cart</button>
+                </div>
+                <div class="product" data-category="pants">
+                    <img src="cargo.jpeg" alt="Cargo pants">
+                    <h3>Cargo Pants</h3>
+                    <p>Perfect for travelling</p>
+                    <p class="price">₹1799</p>
+                    <button class="add-to-cart" data-id="8">Add to Cart</button>    
+            </div>
+        </div>
+        <div class="product-category" id="Shorts">
+            <h3>Shorts</h3>
+            <div class="product-container">
+                <div class="product" data-category="shorts">
+                    <img src="casualsh.webp" alt="Casual shorts">
+                    <h3>Mens Casual shorts</h3>
+                    <p>Versatile for all occasions</p>
+                    <p class="price">₹759</p>
+                    <button class="add-to-cart" data-id="9">Add to Cart</button>
+                </div>
+                <div class="product" data-category="shorts">
+                    <img src="images.jpeg" alt="Formal Trousers">
+                    <h3>Athletic shorts</h3>
+                    <p>Perfect for all kind of sports</p>
+                    <p class="price">₹599</p>
+                    <button class="add-to-cart" data-id="10">Add to Cart</button>
+                </div>
+                <div class="product" data-category="shorts">
+                    <img src="cargopants.jpg" alt="Cargo shorts">
+                    <h3>Multi Pocket Cargo shorts</h3>
+                    <p>Perfect for carrying things</p>
+                    <p class="price">₹799</p>
+                    <button class="add-to-cart" data-id="11">Add to Cart</button>    
+            </div>
+        </div>
+        <div class="product-category" id="Shoes">
+            <h3>Shorts</h3>
+            <div class="product-container">
+                <div class="product" data-category="shoes">
+                    <img src="loaf.jpg" alt="loafers">
+                    <h3>Mens Casual shorts</h3>
+                    <p>As formal as it gets</p>
+                    <p class="price">₹1299</p>
+                    <button class="add-to-cart" data-id="12">Add to Cart</button>
+                </div>
+                <div class="product" data-category="shoes">
+                    <img src="sneak.jpeg" alt="Formal Trousers">
+                    <h3>Sneakers</h3>
+                    <p>All purpose serves well</p>
+                    
+                    <p class="price">₹1599</p>
+                    <button class="add-to-cart" data-id="13">Add to Cart</button>
+                </div>
+                <div class="product" data-category="shoes">
+                    <img src="sport.jpg" alt="sport">
+                    <h3>Sport shoes</h3>
+                    <p>Run unlimited with these...</p>
+                    <p class="price">₹1799</p>
+                    <button class="add-to-cart" data-id="14">Add to Cart</button>    
+            </div>
+        </div>
+    </section>
+
+    <footer>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
